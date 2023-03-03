@@ -1,0 +1,43 @@
+﻿@model IEnumerable<assignmentdotnet.Entities.EmployeeDetail>
+@{
+}
+<div>
+   display user details
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Employee_Name
+                </th>
+                 <th>
+                Age
+                </th>
+                 <th>
+                Salary
+                </th>
+                 <th>
+                Designation
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+ @foreach(var prod in Model)
+    {
+          <tr>
+            <td>
+                @prod.Name;
+                </td>
+                <td>
+                    @prod.Age;
+                    </td>
+                      <td>
+                    @prod.Salary;
+                    </td>
+                      <td>
+                    @prod.Designation;
+                    </td>
+            </tr>
+    }
+    </tbody>
+        </table>
